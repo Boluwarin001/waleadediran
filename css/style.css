@@ -1,0 +1,396 @@
+body{
+    margin:auto;
+    background: black;
+}
+
+*{
+    text-align: left !important;
+    color: #fff !important;
+}
+
+a{
+    color: inherit !important;
+    text-decoration: none;
+}
+
+.clear{clear: both;}
+.slide{
+    padding: 0 !important;
+}
+
+.slides{
+    width: 100vw !important;
+    height: 100%;
+    margin: 0 !important;
+    transform: translate(0) scale(1) !important;
+    inset: 0 !important;
+    top: 0 !important;
+}
+
+.reveal-viewport.reveal-scroll .scroll-page section {
+    width: 100vw !important;
+    height: 100vh !important;
+    top: 0 !important;
+    left: 0 !important;
+    transform: scale(1) translate(0) !important;
+}
+
+.black-banner{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.7);
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8));
+}
+
+#bannerVideo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+}
+
+.video-label{
+    position: absolute;
+    left: 100px;
+    bottom: 50px;
+    z-index: 2;
+    color: #fff;
+    font-family: "Raleway", sans-serif;
+}
+
+.video-title{
+    font-size: 5.5rem;
+    /* margin-bottom: 10px; */
+}
+
+.video-title2{
+    font-size: 2.5rem;
+    font-family: 'Dancing Script', cursive;
+    margin-bottom: 20px;
+}
+
+.nav-links{
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    z-index: 2;
+}
+
+.nav-link{
+    text-align: right !important;
+    letter-spacing: 0.2em;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    margin: 10px 0;
+    transition: 0.3s;
+}
+
+.nav-link:hover{
+    border-right: 20px solid #fff;
+    padding-right: 20px;
+    color:gold;
+}
+.connect-div{
+    position: absolute;
+    bottom: 100px;
+    right: 50px;
+    /* display: none; */
+    font-size: 12px;
+    text-align: right !important;
+    /* background: red; */
+}
+
+.line{
+    width: 2px;
+    height: 20px;
+    background: #fff;
+    margin: 12px 0;
+    /* margin-right: 5px; */
+    float: right;
+}
+
+.social-icons{
+    margin-right:-8px;
+    font-size: 20px;
+    line-height: 2em;
+    text-align: right !important;
+}
+
+.social-icons a{
+    color: #fff !important;
+}
+
+.social-icons a:hover{
+    color: gold !important;
+}
+
+.page-content{
+    padding: 5%;
+}
+
+.years-carousel{
+    font-size: 20px !important;
+    /* background: red; */
+    max-width: 1000px;
+    margin: auto;
+}
+
+.year-select{
+    text-align: center !important;
+    font-family: 'Nunito', sans-serif;
+    padding: 15px 0;
+    background: black;
+    transition: 0.3s;
+    /* background: blue; */
+    border-radius: 5px;
+}
+
+.year-select-active, .year-select-active:hover{
+    background: #0704bb !important;
+    color: #fff !important;
+}
+
+
+.owl-item.active{
+    /* background: red; */
+}
+
+.year-select:hover{
+    background: rgb(255, 255, 255, 0.01);
+    cursor: pointer;
+}
+
+.year-content-carousel{
+    max-width: 940px;
+    margin: auto;
+    margin-top: 20px;
+    overflow-y: scroll;
+    height: 75vh;
+}
+
+.year-content-carousel::-webkit-scrollbar {
+    width: 5px;
+    background: rgb(255, 255, 255, 0.0);
+}
+
+
+.year-content{
+    padding: 100px;
+    background: black;
+    font-size: 22px !important;
+    line-height: 1.4em;
+}
+
+.year-content img{
+    max-width: 50%;
+    float: left;
+}
+
+.year-content-title{
+    font-size: 30px;
+    margin-bottom: 30px;
+    line-height: 1.2em;
+}
+
+
+
+
+/* CONTACT */
+.fill-section{
+    width: 100vw;
+    height: 100vh;
+    background:black;
+}
+
+.contact-pad{
+    padding: 15% 10%;
+}
+
+.title1{
+    font-size: 1.5em;
+    font-family: 'Teachers';
+    margin-bottom: 20px;
+}
+
+.text1{
+    font-size: 22px !important;
+    font-family: 'Teachers';
+}
+
+.footer-gratitude{
+    position: absolute;
+    bottom: 30px;
+    text-align: center !important;
+    width: 100vw;
+    color: #fff;
+    font-size: 16px;
+}
+
+
+/* AWARDS */
+.awards-pills{
+    display: flex;
+    margin-top: 20px;
+    /* background: red; */
+    max-width: 1700px;
+    overflow-y: scroll;
+    height: 70vh;
+    align-items: flex-start !important;
+    align-content: flex-start !important;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+}
+
+.awards-pills::-webkit-scrollbar {
+    width: 5px;
+    background: rgb(255, 255, 255, 0.0);
+}
+
+.award{
+    padding: 40px 40px;
+    background: rgb(255, 255, 255, 0.1);
+    /* border: 1px solid #000; */
+    font-size: 18px;
+    margin-right: 10px;
+    border-radius: 10px;
+    width: 400px;
+    color: #000 !important;
+    margin: 10px 20px 10px 0;
+    transition: 0.7s;
+}
+
+.award:hover{
+    background: #0704bb;
+}
+
+.award-title{
+    font-weight: bolder;
+    margin-bottom: 5px;
+    font-size: 20px !important;
+}
+
+.award-text{
+    font-size: 14px !important;
+}
+
+
+/* media responsive */
+@media screen and (max-width: 1000px){
+    .video-label{
+        left: 50px;
+        bottom: 50px;
+    }
+    
+    .video-title{
+        font-size: 3.5rem;
+    }
+    
+    .video-title2{
+        font-size: 1.5rem;
+    }
+
+    .page-content{
+        padding-top: 70px;
+    }
+    .contact-pad{
+        padding-top: 30% !important;
+    }
+}
+
+
+@media screen and (max-width: 600px){
+
+    .video-label{
+        left: 20px;
+        bottom: 70px;
+    }
+    
+    .video-title{
+        font-size: 2rem;
+    }
+    
+    .video-title2{
+        font-size: 1.3rem;
+    }
+
+    .nav-links{
+        top: 20px;
+        right: 20px;
+    }
+
+    .nav-link{
+        font-size: 16px !important;
+        /* background: black; */
+        margin: 5px 0;
+    }
+
+    .connect-div{
+        right: 30px;
+        bottom: 90px;
+    }
+
+    .social-icons{
+        font-size: 14px;
+        margin-right: -5px;
+    }
+    
+    .year-content{
+        font-size: 18px !important;
+        padding: 100px 30px;
+    }
+    .year-content img{
+        max-width: 100%;
+    }
+
+
+    .award{
+        padding: 30px;
+        font-size: 18px;
+        margin-right: 10px;
+        border-radius: 10px;
+        width: auto;
+        /* margin: 10px; */
+    }
+    
+    .award-title{
+        font-weight: bolder;
+        margin-bottom: 5px;
+        font-size: 18px !important;
+    }
+    
+    .award-text{
+        font-size: 12px !important;
+    }
+
+}
+
+
+
+@media screen and (max-width: 454px){
+
+.year-select{
+    font-size: 14px !important;
+    padding: 10px 0;
+}
+
+.contact-pad{
+    padding-top: 50% !important;
+}
+
+.title1{
+    font-size: 1em;
+}
+
+.text1{
+    font-size: 20px !important;
+}
+
+
+}
